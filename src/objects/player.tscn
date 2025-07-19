@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://tfuevkc2uimj"]
+
+[ext_resource type="PackedScene" uid="uid://d150uw8qgoyl7" path="res://assets/3d_mask.glb" id="1_o168d"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ls6g0"]
+radius = 0.75
+height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ub43c"]
+albedo_color = Color(0, 0, 0, 1)
+roughness = 0.8
+
+[node name="Node3D" type="Node3D"]
+
+[node name="3d_mask" parent="." instance=ExtResource("1_o168d")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.149252, 0)
+mesh = SubResource("SphereMesh_ls6g0")
+surface_material_override/0 = SubResource("StandardMaterial3D_ub43c")
