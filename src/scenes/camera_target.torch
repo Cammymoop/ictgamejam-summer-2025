@@ -1,0 +1,117 @@
+[orchestration type="OScript" load_steps=7 format=3 uid="uid://bkojupjcjtofl"]
+
+[obj type="OScriptFunction" id="OScriptFunction_cfeuk"]
+guid = "2EE3257F-D6B9-4A9D-8B7F-A072ABFD830F"
+method = {
+"name": &"_process",
+"flags": 8,
+"args": [{
+"name": &"delta",
+"type": 3
+}]
+}
+id = 0
+
+[obj type="OScriptGraph" id="OScriptGraph_3s2ei"]
+graph_name = &"EventGraph"
+flags = 8
+nodes = Array[int]([0, 2, 3, 4])
+functions = Array[int]([0])
+
+[obj type="OScriptNodeEvent" id="OScriptNodeEvent_w7s8c"]
+function_id = "2EE3257F-D6B9-4A9D-8B7F-A072ABFD830F"
+id = 0
+position = Vector2(180, 300)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}, {
+"pin_name": &"delta",
+"type": 3,
+"dir": 1,
+"flags": 2
+}])
+
+[obj type="OScriptNodeSceneNode" id="OScriptNodeSceneNode_s2lau"]
+node_path = NodePath("Player")
+target_class_name = "CharacterBody3D"
+id = 2
+position = Vector2(140, 480)
+pin_data = Array[Dictionary]([{
+"pin_name": &"Player",
+"type": 24,
+"dir": 1,
+"flags": 2050,
+"target_class": "CharacterBody3D"
+}])
+
+[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_tijot"]
+function_name = &"get_global_position"
+target_class_name = "Node3D"
+target_type = 24
+flags = 522
+method = {
+"name": &"get_global_position",
+"return": {
+"type": 9
+},
+"flags": 5
+}
+chain = false
+id = 3
+position = Vector2(380, 500)
+pin_data = Array[Dictionary]([{
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "Node3D",
+"target_class": "Node3D"
+}, {
+"pin_name": &"return_value",
+"type": 9,
+"dir": 1,
+"flags": 1026
+}])
+
+[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_65ik2"]
+function_name = &"set_global_position"
+target_class_name = "Node3D"
+target_type = 24
+flags = 520
+method = {
+"name": &"set_global_position",
+"args": [{
+"name": &"position",
+"type": 9
+}]
+}
+chain = false
+id = 4
+position = Vector2(640, 380)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecIn",
+"flags": 4
+}, {
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}, {
+"pin_name": &"target",
+"type": 24,
+"flags": 2050,
+"label": "Node3D",
+"target_class": "Node3D"
+}, {
+"pin_name": &"position",
+"type": 9,
+"flags": 2,
+"dv": Vector3(0, 0, 0)
+}])
+
+[resource]
+base_type = &"Node3D"
+functions = Array[OScriptFunction]([SubResource("OScriptFunction_cfeuk")])
+connections = Array[int]([2, 0, 3, 0, 0, 0, 4, 0, 3, 0, 4, 2])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeEvent_w7s8c"), SubResource("OScriptNodeSceneNode_s2lau"), SubResource("OScriptNodeCallMemberFunction_tijot"), SubResource("OScriptNodeCallMemberFunction_65ik2")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_3s2ei")])

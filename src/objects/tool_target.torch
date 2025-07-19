@@ -1,9 +1,0 @@
-[orchestration type="OScript" load_steps=2 format=3 uid="uid://kjbj2buyccn8"]
-
-[obj type="OScriptGraph" id="OScriptGraph_g7t0j"]
-graph_name = &"EventGraph"
-flags = 8
-
-[resource]
-base_type = &"Marker3D"
-graphs = Array[OScriptGraph]([SubResource("OScriptGraph_g7t0j")])

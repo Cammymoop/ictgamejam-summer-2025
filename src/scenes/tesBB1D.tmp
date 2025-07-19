@@ -51,7 +51,7 @@ script = ExtResource("1_1lafp")
 transform = Transform3D(1, 0, 0, 0, 0.860742, 0.509041, 0, -0.509041, 0.860742, 0, 4.83553, 6.362)
 
 [node name="Player" parent="." instance=ExtResource("1_yndmk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.25539, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03447, 0)
 
 [node name="Terrain" type="Node3D" parent="."]
 
@@ -64,18 +64,6 @@ collision_layer = 9
 collision_mask = 9
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/MeshInstance3D/StaticBody3D"]
-shape = SubResource("ConvexPolygonShape3D_wi7in")
-
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Terrain"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.31167, -2.94108, 3.1512)
-mesh = SubResource("BoxMesh_ntcas")
-surface_material_override/0 = SubResource("StandardMaterial3D_x3vpn")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Terrain/MeshInstance3D5"]
-collision_layer = 9
-collision_mask = 9
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Terrain/MeshInstance3D5/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_wi7in")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Terrain"]

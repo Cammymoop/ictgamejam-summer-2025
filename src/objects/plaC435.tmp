@@ -19,32 +19,15 @@ roughness = 0.8
 collision_layer = 10
 collision_mask = 11
 script = ExtResource("1_3ntlj")
-tentacle_extend_time = 2.0
-
-[node name="FindPos" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76837e-07, -1.61481, -4.10116)
-
-[node name="FindPos2" type="Marker3D" parent="."]
-transform = Transform3D(0.398541, 0, -0.917151, 0, 1, 0, 0.917151, 0, 0.398541, 2.27836, -1.61481, -3.41007)
-
-[node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(0.398541, 0, -0.917151, 0, 1, 0, 0.917151, 0, 0.398541, 0, 0, 0)
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_cbefa")
 
-[node name="NewTentacleFrontRaycast" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.60969)
-target_position = Vector3(0, -2, -1.2)
-
 [node name="NewTentacleRaycast" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.768063, 0, -1.20231)
-target_position = Vector3(0.5, -2, -1)
+target_position = Vector3(2, -2, -2)
 
 [node name="NewTentacleRaycast2" type="RayCast3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.768, 0, -1.202)
-target_position = Vector3(-0.5, -2, -1)
+target_position = Vector3(2, -2, -2)
 
 [node name="Model" type="Node3D" parent="."]
 
