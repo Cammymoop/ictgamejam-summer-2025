@@ -19,7 +19,7 @@ roughness = 0.8
 collision_layer = 10
 collision_mask = 11
 script = ExtResource("1_3ntlj")
-tentacle_extend_time = 2.0
+tentacle_extend_time = 0.6
 
 [node name="FindPos" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76837e-07, -1.61481, -4.10116)

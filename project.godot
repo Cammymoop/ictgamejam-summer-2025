@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 window/size/window_width_override=1600
 window/size/window_height_override=900
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/mixamo_animation_retargeter/plugin.cfg")
+
 [filesystem]
 
 import/blender/enabled=false
