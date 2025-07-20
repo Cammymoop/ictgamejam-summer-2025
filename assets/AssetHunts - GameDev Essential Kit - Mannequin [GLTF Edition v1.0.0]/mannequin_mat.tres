@@ -1,9 +1,0 @@
-[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://by4uj5b4g4s2o"]
-
-[ext_resource type="Texture2D" uid="uid://b0hhht30d5sof" path="res://assets/AssetHunts - GameDev Essential Kit - Mannequin [GLTF Edition v1.0.0]/Texture/Mannequin_Woman_Albedo.png" id="1_fx7vw"]
-[ext_resource type="Texture2D" uid="uid://4hqh1c38ji40" path="res://assets/AssetHunts - GameDev Essential Kit - Mannequin [GLTF Edition v1.0.0]/Texture/Mannequin_Woman_Normal_DirectX.png" id="2_lkuvk"]
-
-[resource]
-albedo_texture = ExtResource("1_fx7vw")
-normal_enabled = true
-normal_texture = ExtResource("2_lkuvk")
