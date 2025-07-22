@@ -14,8 +14,8 @@ id = 0
 
 [obj type="OScriptGraph" id="OScriptGraph_3s2ei"]
 graph_name = &"EventGraph"
-offset = Vector2(663.674, -246.93)
-zoom = 0.826446
+offset = Vector2(-51.2018, -78.817)
+zoom = 0.424097
 flags = 8
 nodes = Array[int]([0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
 functions = Array[int]([0])
@@ -45,8 +45,7 @@ pin_data = Array[Dictionary]([{
 "type": 24,
 "dir": 1,
 "flags": 2050,
-"target_class": "CharacterBody3D",
-"dv": null
+"target_class": "CharacterBody3D"
 }])
 
 [obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_tijot"]
@@ -205,8 +204,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"return_value",
 "type": 17,
 "dir": 1,
-"flags": 1026,
-"dv": Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)
+"flags": 1026
 }])
 
 [obj type="OScriptNodeComposeFrom" id="OScriptNodeComposeFrom_scvhq"]
@@ -215,8 +213,7 @@ position = Vector2(220, 540)
 pin_data = Array[Dictionary]([{
 "pin_name": &"object",
 "type": 24,
-"flags": 2,
-"dv": null
+"flags": 2
 }, {
 "pin_name": &"method",
 "type": 21,
@@ -256,8 +253,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"target",
 "type": 25,
 "flags": 2058,
-"label": "Callable",
-"dv": Callable()
+"label": "Callable"
 }, {
 "pin_name": &"return_value",
 "dir": 1,
@@ -303,8 +299,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"return_value",
 "type": 17,
 "dir": 1,
-"flags": 1026,
-"dv": Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)
+"flags": 1026
 }])
 
 [obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_ys76a"]

@@ -42,51 +42,63 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ub43c")
 
 [node name="Cylinder" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0733914, 0.349046)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder3" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.174523, -0.0733914, 0.302283)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder4" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.302283, -0.0733914, 0.174523)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder5" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.349046, -0.0733914, 0)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder6" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.302283, -0.0733914, -0.174523)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder7" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.174523, -0.0733914, -0.302283)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder8" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0733914, -0.349046)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder9" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.174523, -0.0733914, -0.302283)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder10" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302283, -0.0733914, -0.174523)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder11" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.349046, -0.0733914, 0)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder12" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302283, -0.0733914, 0.174523)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Cylinder13" parent="Model/MeshInstance3D/Tentacles" instance=ExtResource("2_ar710")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.174523, -0.0733914, 0.302283)
-instance_shader_parameters/extended = 0.0
+instance_shader_parameters/extended = 1.0
+instance_shader_parameters/tentatarget = null
 
 [node name="Node" type="Node" parent="."]
 
@@ -105,7 +117,7 @@ transform = Transform3D(0.398541, 0, -0.917151, 0, 1, 0, 0.917151, 0, 0.398541, 
 
 [node name="NewTentacleFrontRaycast" type="RayCast3D" parent="Node/OnlyFaceForward"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.238843, -1.60969)
-target_position = Vector3(0, -2, -1.2)
+target_position = Vector3(0, -2.2, -1.32)
 
 [node name="NewTentacleRaycast" type="RayCast3D" parent="Node/OnlyFaceForward"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.768063, -0.238843, -1.20231)

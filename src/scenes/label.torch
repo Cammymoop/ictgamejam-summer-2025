@@ -14,7 +14,7 @@ id = 0
 
 [obj type="OScriptGraph" id="OScriptGraph_mpbym"]
 graph_name = &"EventGraph"
-offset = Vector2(-4, -26)
+offset = Vector2(-4, 0)
 flags = 8
 nodes = Array[int]([0, 1, 2, 3, 4, 5])
 functions = Array[int]([0])
@@ -92,8 +92,7 @@ pin_data = Array[Dictionary]([{
 "dir": 1,
 "flags": 2050,
 "label": "Performance",
-"target_class": "Performance",
-"dv": null
+"target_class": "Performance"
 }])
 
 [obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_j0xtd"]
@@ -129,8 +128,7 @@ pin_data = Array[Dictionary]([{
 "type": 24,
 "flags": 2050,
 "label": "Performance",
-"target_class": "Performance",
-"dv": null
+"target_class": "Performance"
 }, {
 "pin_name": &"monitor",
 "type": 2,
@@ -141,8 +139,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"return_value",
 "type": 3,
 "dir": 1,
-"flags": 1026,
-"dv": 0.0
+"flags": 1026
 }])
 
 [obj type="OScriptNodeCallBuiltinFunction" id="OScriptNodeCallBuiltinFunction_e5jhg"]
@@ -170,8 +167,7 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"return_value",
 "type": 4,
 "dir": 1,
-"flags": 1026,
-"dv": ""
+"flags": 1026
 }])
 
 [resource]

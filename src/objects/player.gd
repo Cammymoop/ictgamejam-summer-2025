@@ -71,7 +71,7 @@ var cur_floor_distance: float = 0.0
 var was_floor_distance: float = 0.0
 var floor_target_distance: float = 1.3
 
-var want_extended: int = 7
+var want_extended: int = 9
 
 var camera_node: Camera3D = null
 
@@ -440,6 +440,9 @@ func try_extend_next_tentacle() -> void:
         if not tentacle_extended[i]:
             unextended_indexes.append(i)
     unextended_indexes.shuffle()
+    
+    if tentacle_extended.size() - unextended_indexes.size() < want_extended - 1:
+        return
     
     var raycast: = next_new
     if new_tentacle_raycast.is_colliding() and new_tentacle_raycast2.is_colliding():

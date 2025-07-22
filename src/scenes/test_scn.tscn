@@ -1898,6 +1898,57 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_kwfj6")
 
+[sub_resource type="Animation" id="Animation_77jo1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BikePivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BikePivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 3.14159, -0.115192)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BikePivot/Bike/Pedals:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("BikePivot/Bike/RearWheal:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_acbis"]
 resource_name = "bike_move"
 length = 4.0
@@ -1960,57 +2011,6 @@ tracks/4/keys = {
 "transitions": PackedFloat32Array(1.41421, 1, 1, 1, 0.517632, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(3.14159, 0, 0), Vector3(6.19592, 0, 0), Vector3(0, 0, 0), Vector3(3.14159, 0, 0), Vector3(3.31613, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_77jo1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("BikePivot:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("BikePivot:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 3.14159, -0.115192)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("BikePivot/Bike/Pedals:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("BikePivot/Bike/RearWheal:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_plb0p"]
@@ -2206,10 +2206,10 @@ transform = Transform3D(-1, 5.83327e-09, 1.50883e-07, 0, 0.999254, -0.038632, -1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4911, -1.17012, 10.9396)
 
 [node name="Helmet" parent="Terrain/BikeRoot" instance=ExtResource("3_8ul8g")]
-transform = Transform3D(-0.998709, -0.0291995, 0.0408454, -0.050208, 0.580814, -0.812478, 3.57617e-07, -0.813496, -0.581553, -0.864365, 7.47047, -4.95665)
+transform = Transform3D(-0.99871, -0.0291993, 0.0408455, -0.050208, 0.580814, -0.812478, 1.56458e-07, -0.813496, -0.581553, -0.864363, 7.47047, -4.95665)
 
 [node name="BikePivot" type="Node3D" parent="Terrain/BikeRoot"]
-transform = Transform3D(-0.993373, -0.114937, -8.74228e-08, -0.114937, 0.993373, 0, 8.68434e-08, 1.00481e-08, -1, 0, 0, 0)
+transform = Transform3D(-0.993373, -0.114937, 2.53518e-06, -0.114937, 0.993373, 0, -2.51838e-06, -2.91387e-07, -1, 0, 0, 0)
 
 [node name="Bike" type="Node3D" parent="Terrain/BikeRoot/BikePivot"]
 transform = Transform3D(9.9372, 0, 0, 0, 9.9372, 0, 0, 0, 9.93719, 0, 5.09514, 0)
